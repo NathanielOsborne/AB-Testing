@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partners | MEJOR Technologies</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">MEJOR</span>
+        <span class="brand-sub">Technologies</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/#platform">Platform</a>
+        <a href="/#solutions">Solutions</a>
+        <a href="/#demo">Demo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-shell feature-center">
+        <div class="center-copy">
+          <p class="eyebrow">Partners</p>
+          <h2>Collaboration application</h2>
+          <p>
+            Tell us about your organization and how you'd like to collaborate.
+          </p>
+        </div>
+
+        <div id="collaboration-application" class="demo-block application-block">
+          <form
+            class="demo-form"
+            name="collaboration"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="thank-you.html"
+          >
+            <input type="hidden" name="form-name" value="collaboration" />
+            <p class="hidden-field">
+              <label>
+                Don't fill this out if you're human:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="organization" placeholder="Organization" />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us how you'd like to collaborate"
+            ></textarea>
+            <button class="button primary" type="submit">Submit application</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark">MEJOR</span>
+          <span class="brand-sub">Technologies</span>
+          <p>Better tech for a brighter tomorrow.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
